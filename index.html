@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="mitlon vuong">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- html display -->
+  <p id="log"></p>
+
+  <script>
+    // variables
+    let name;
+    let welcome;
+    let guess;
+    let ppick;
+    let cpick;
+
+    //prompts
+    name = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started:');
+    welcome = 'Hi ' + `${name}` + ' Let\'s play!!';
+    alert(welcome);
+    guess = prompt('Who are you: Bear, Ninja, or Hunter?');
+
+    //console display
+    ppick = `${name}` + ', You picked ' + `${guess}` + '!';
+    cpick = 'The computer picked Bear!';
+    console.log(`${name}` + ', You picked ' + `${guess}` + '!\n' + 'The computer picked Bear!');
+
+    //html display
+    document.getElementById('log').innerHTML = `${ppick}` + '<br>' + `${cpick}`;
+
+    //prompt display
+    alert(`${ppick}` + '\n' + `${cpick}`);
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
